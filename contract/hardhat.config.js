@@ -1,17 +1,15 @@
-require("@nomicfoundation/hardhat-toolbox");
-require ("@nomiclabs/hardhat-ethers")
-require('dotenv').config();
+require("@nomiclabs/hardhat-ethers");
+require("dotenv").config();
 
-const { PRIVATE_KEY } = process.env;
 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.24",
   networks: {
     hardhat: {
     },
-    "lisk-sepolia": {
-      url: `https://rpc.sepolia-api.lisk.com`,
-      accounts: [`0x${PRIVATE_KEY}`]
+    celoTestnet: {
+      url: process.env.CELO_URL,
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
     }
   }
 };

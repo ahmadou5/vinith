@@ -160,7 +160,7 @@ const OrderCreation = () => {
                   </div>
                   <div className="artTag">
                     <div>
-                      <h2>{art.price} LSK</h2>
+                      <h2>{art.price} cUSD</h2>
                     </div>
                     <button 
                       className="artTag-btn" 

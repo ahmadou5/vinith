@@ -7,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const MONGO_URI = 'mongodb+srv://ayofe70:Adebayo20@cluster0.fgluhet.mongodb.net/artmarketplace';
 
 // Connect to MongoDB

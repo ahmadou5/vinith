@@ -1,5 +1,6 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { TransactionContext } from '../../contest/TransactionContext';
 import { shortenAddress } from "../../utils/shortenAddress";
 import "./Navbar.css";
@@ -43,7 +44,7 @@ const Navbar = () => {
             {currentAccount ? (
             <p className='trade-button'>{shortenAddress(currentAccount)}</p>
             ) : (
-              <button className='trade-button' onClick={handleConnectWallet}>Connect Wallet</button>
+              <ConnectButton />
             )}
             <IoMdMenu className='menu-icon' onClick={toggleMenu} />
         </nav>

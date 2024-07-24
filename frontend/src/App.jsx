@@ -7,12 +7,14 @@ import { Routes, Route, BrowserRouter } from "react-router-dom"
 // import { ArtStatusProvider } from "./context/ArtStatusContext"
 import ArtStatusProvider from './context/ArtStatusContext'
 import BuyArtProvider from "./context/BuyArtContext "
+//import { EthProvider } from "./EthProvider"
 // import { ArtStatusContext } from "./context/ArtStatusContext"
 
 
 function App() {
 
   return (
+
     <ArtStatusProvider>
       <BuyArtProvider>
     <BrowserRouter>
@@ -27,6 +29,7 @@ function App() {
     </BrowserRouter>
       </BuyArtProvider>
     </ArtStatusProvider>
+
   )
 }
 
